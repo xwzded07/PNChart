@@ -42,6 +42,7 @@
 		9FE15DF8190BB014004129F5 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE15DE9190BB014004129F5 /* PNChartLabel.m */; };
 		9FE15DFA190BB014004129F5 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE15DEE190BB014004129F5 /* PNColor.m */; };
 		E2C3ED5773A1409C8367CC70 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA6321352024B1FBA0158B0 /* libPods.a */; };
+		F516956D1A2C797F000790A8 /* PCCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F516956C1A2C797F000790A8 /* PCCircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		9FE15DED190BB014004129F5 /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
 		9FE15DEE190BB014004129F5 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
 		EFE4F6360943ED4001072124 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F516956B1A2C797F000790A8 /* PCCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCircleViewController.h; sourceTree = "<group>"; };
+		F516956C1A2C797F000790A8 /* PCCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 				0AF7A8AE182AAEEF003645C4 /* PCChartViewController.m */,
 				9FA23B0E184A5944002DBBA4 /* PCChartsTableViewController.h */,
 				9FA23B0F184A5944002DBBA4 /* PCChartsTableViewController.m */,
+				F516956B1A2C797F000790A8 /* PCCircleViewController.h */,
+				F516956C1A2C797F000790A8 /* PCCircleViewController.m */,
 			);
 			name = PCChartViewController;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				9FE15DFA190BB014004129F5 /* PNColor.m in Sources */,
 				91177ED8198DFAC400017E27 /* PNBar.m in Sources */,
 				91177EE2198DFAC400017E27 /* PNLineChartDataItem.m in Sources */,
+				F516956D1A2C797F000790A8 /* PCCircleViewController.m in Sources */,
 				0AF7A8AF182AAEEF003645C4 /* PCChartViewController.m in Sources */,
 				91177EDA198DFAC400017E27 /* PNBarChart.m in Sources */,
 				91177EE6198DFAC400017E27 /* PNPieChartDataItem.m in Sources */,

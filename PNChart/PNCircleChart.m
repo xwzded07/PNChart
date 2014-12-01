@@ -146,23 +146,29 @@
     }
 }
 
-
-
-- (void)growChartByAmount:(NSNumber *)growAmount
+- (void)setCurrent:(NSNumber *)newValue
 {
-    NSNumber *updatedValue = [NSNumber numberWithFloat:[_current floatValue] + [growAmount floatValue]];
-
+    NSNumber *growAmount = [NSNumber numberWithFloat:[newValue floatValue] - [_current floatValue]];
+    
     // Add animation
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnimation.duration = self.duration;
     pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pathAnimation.fromValue = @([_current floatValue] / [_total floatValue]);
-    pathAnimation.toValue = @([updatedValue floatValue] / [_total floatValue]);
-    _circle.strokeEnd   = [updatedValue floatValue] / [_total floatValue];
+    pathAnimation.toValue = @([newValue floatValue] / [_total floatValue]);
+    _circle.strokeEnd   = [newValue floatValue] / [_total floatValue];
     [_circle addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
-
+    
     [self.countingLabel countFrom:fmin([_current floatValue], [_total floatValue]) to:fmin([_current floatValue] + [growAmount floatValue], [_total floatValue]) withDuration:self.duration];
-    _current = updatedValue;
+    _current = newValue;
+}
+
+
+
+- (void)growChartByAmount:(NSNumber *)growAmount
+{
+    NSNumber *newValue = [NSNumber numberWithFloat:[_current floatValue] + [growAmount floatValue]];
+    [self setCurrent:newValue];
 }
 
 @end
